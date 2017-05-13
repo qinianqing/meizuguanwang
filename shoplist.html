@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>手机商城大杂烩</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/next.css"/>
+    <link rel="stylesheet" href="css/banner.css"/>
+    <link rel="stylesheet" href="css/liujiahao.css"/>
+    <link rel="stylesheet" href="css/css.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/nav_index.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/jquery.color.js"></script>
+    <script src="js/liujiahao.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="heading">
+    <!--body遮罩层-->
+    <div class="rubbish" id="rubbish"></div>
+    <!--导航-->
+    <div class="site-topbar">
+        <div class="w topbar-container">
+            <div class="topbar-nav">
+                <ul>
+                    <li><a href="#">魅族官网</a></li>
+                    <li><a href="#">魅族商城</a></li>
+                    <li><a href="#">Flyme</a></li>
+                    <li><a href="#">专卖店</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">社区</a></li>
+                </ul>
+            </div>
+            <div class="topbar-right">
+                <ul>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="javascript:;" id="login_up">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+            <div class="login" style="top:144px;" id="login">
+                <h3 id="welcome">欢迎登陆</h3>
+
+                <div class="admin">
+                    <span class="low">账号：</span><input type="text" id="admin" placeholder="请输入账号"/><span
+                        id="ale"></span><br/>
+                </div>
+                <div class="password">
+                    <span class="low">密码：</span><input type="text" id="password" placeholder="请输入密码"/><span
+                        id="pass"></span><br/>
+                </div>
+                &nbsp; <a href="javascript:;" onclick="haha()">立即登录</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#">忘记密码</a>
+                <i>×</i>
+            </div>
+            <script>
+                function haha() {
+                    if ($("#password")[0].value == "" || ("#admin")[0].value == "") {
+                        $("#pass").text("请输入密码")
+                        $("#pass").css("color", "red")
+                        $("#ale").text("请输入账号")
+                        $("#ale").css("color", "red")
+                    } else {
+                        if ($("#ale")[0].innerText == "") {
+                            $("#ale").text("")
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <!--logo部分-->
+    <div class="top-header" id="top_header">
+        <div class="site-header">
+            <div class="w header-container">
+                <div class="logo"><a href="#">闪购</a><img src="images/logo.jpg" alt="" width="130" height="80"/></div>
+                <div class="header-nav" id="header_nav">
+                    <ul>
+                        <li><a href="#">PRO手机</a></li>
+                        <li><a href="#">魅蓝手机</a></li>
+                        <li><a href="#">MX手机</a></li>
+                        <li><a href="#">精选配件</a></li>
+                        <li><a href="#">智能硬件</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--菜单-->
+            <div class="header-nav-menu" id="header_nav_menu">
+                <div class="menu-container" id="menu_container">
+                    <ul class="menu-product-one" id="menu_product_0">
+                        <li>
+                            <div><img src="images/mz-product4.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product2.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product5.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                    </ul>
+                    <ul class="menu-product-two" id="menu_product_1">
+                        <li>
+                            <div><img src="images/mz-product3.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product4.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product5.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product6.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product7.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product8.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                    </ul>
+                    <ul class="menu-product-three" id="menu_product_2">
+                        <li>
+                            <div><img src="images/mz-product9.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product8.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product4.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                    </ul>
+                    <ul class="menu-product-four" id="menu_product_3">
+                        <li>
+                            <div><img src="images/mz-product11.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product12.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product13.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product14.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product15.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div class="menu-product-more" id="menu_product_more">
+                                <!--<ul>-->
+                                <p><img src="images/mz-product22.png" alt=""/>耳机/音响</p>
+
+                                <p><img src="images/mz-product23.png" alt=""/>路由器/移动电源</p>
+
+                                <p><img src="images/mz-product24.png" alt=""/>保护套/后盖/贴膜</p>
+
+                                <p><img src="images/mz-product25.png" alt=""/>数据线/电源适配器</p>
+
+                                <p><img src="images/mz-product26.png" alt=""/>周边配件</p>
+                                <!--</ul>-->
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="menu-product-four" id="menu_product_4">
+                        <li>
+                            <div><img src="images/mz-product16.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product17.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product18.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product19.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product20.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                        <li>
+                            <div><img src="images/mz-product21.png" alt=""/></div>
+                            <p>魅族PRO 6</p>
+                            <span>￥2499</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部-->
+<!--左侧导航-->
+<div class="home-category-wrap">
+    <div class="mzcontainer">
+        <div class="home-category-list">
+            <ul class="home-category-nav">
+                <li class="home-category-nav-item">
+                    <a href="#" class="category-nav-link"><span>全部商品分类</span></a>
+                </li>
+                <li class="home-category-nav-item">
+                    <a href="#" class="category-nav-link"><span>手机</span></a>
+
+                    <div class="category-nav-children">
+                        <div class="nav-children-wrap">
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/u1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅蓝 U20</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/u2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>小米note</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/u3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>红米2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/u4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>三星lkj</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/u5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>推子lk</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/u5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>华为</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/u4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>vivo</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/u3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>小米max</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/u2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>中兴</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/u1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>联想</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-item-ad">
+                            <a href="#"><img src="images/uu1.jpg" alt=""/></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="home-category-nav-item">
+                    <a href="#" class="category-nav-link"><span>只能硬件</span></a>
+
+                    <div class="category-nav-children">
+                        <div class="nav-children-wrap">
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/zhineng1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>沁麟2.5L智能靠谱煲</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/zhineng2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>乐范AirPet 空气净化器</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/zhineng3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span> WeLoop唯乐now2智能手环</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/zhineng4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span> 乐心mambo watch手表</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/zhineng5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span> 乐行天下V5智能电动独轮车</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/zhineng5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span> 公子小白情感智能机器人</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/zhineng4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>麦开智能水杯Cuptime2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/zhineng3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>控客立体拓展智能排插主体</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/zhineng2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>3D BOX 裸眼3D</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/zhineng1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>新游智能游戏手柄 新玩Q1</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-item-ad">
+                            <a href="#"><img src="images/zhineng6.jpg" alt=""/></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="home-category-nav-item">
+                    <a href="#" class="category-nav-link"><span>耳机/音响</span></a>
+
+                    <div class="category-nav-children">
+                        <div class="nav-children-wrap">
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/erji1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅族 EP51蓝牙运动耳机</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/erji2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅族 EP51蓝牙运动耳机</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/erji3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅族EP-31耳机</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/erji4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>先锋  SE-CL51S</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/erji5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>beats Urbeats 入耳耳机</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/erji5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>Skullcandy hesh头戴耳机</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/erji4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>铁三角  ATH-CLR100</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/erji3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>Skullcandy smokin buds</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/erji2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>FiiO飞傲M3无损音乐播放器</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/erji1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>FiiO飞傲M3无损音乐播放器</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-item-ad">
+                            <a href="#"><img src="images/erji5.jpg" alt=""/></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="home-category-nav-item">
+                    <a href="#" class="category-nav-link"><span>路由器/移动电源</span></a>
+
+                    <div class="category-nav-children">
+                        <div class="nav-children-wrap">
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/luyouqi1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅族智能路由器</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/luyouqi2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>小米移动电源（标准版）</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/luyouqi3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅族移动电源 快充版</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/luyouqi4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>小米路由器迷你版</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-item-ad">
+                            <a href="#"><img src="images/luyouqi5.png" alt=""/></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="home-category-nav-item">
+                    <a href="#" class="category-nav-link"><span>保护套/后盖/贴膜</span></a>
+
+                    <div class="category-nav-children">
+                        <div class="nav-children-wrap">
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/hougai1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅蓝E 纤格纹保护壳</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/hougai2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>MX6智能保护套</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/hougai3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅蓝note3 软胶保护壳</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/hougai4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅蓝note3 智能保护套</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/hougai5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>联想3 缤纷软胶保护壳</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/hougai5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>苹果E 高透保护膜</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/hougai4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>PRO 6智能保护套</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/hougai3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>三星3s 高透保护膜	</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/hougai2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>华为note3 高透保护膜</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/hougai1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>小米 x ACFUN联名后盖</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-item-ad">
+                            <a href="#"><img src="images/hougai6.jpg" alt=""/></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="home-category-nav-item">
+                    <a href="#" class="category-nav-link"><span>数据线/电源适配器</span></a>
+
+                    <div class="category-nav-children">
+                        <div class="nav-children-wrap">
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/dianyuan1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span> 中兴E 纤格纹保护壳</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/dianyuan2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span> MX6智能保护套</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/dianyuan3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅蓝note3 软胶保护壳</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/dianyuan4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>联想note3 智能保护套</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/dianyuan5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span> 红米3 缤纷软胶保护壳</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/dianyuan5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>华为E 高透保护膜</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/dianyuan4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>PRO 6智能保护套</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/dianyuan3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span> 三星3s 高透保护膜</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/dianyuan2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>小米note3 高透保护膜	</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/dianyuan1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>小米 x ACFUN联名后盖</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-item-ad">
+                            <a href="#"><img src="images/dianyuan6.jpg" alt=""/></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="home-category-nav-item">
+                    <a href="#" class="category-nav-link"><span>周边配件</span></a>
+
+                    <div class="category-nav-children">
+                        <div class="nav-children-wrap">
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/peijian1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>英特曼迷你旅行小插排</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/peijian2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>猎奇(LIEQI)手机镜头	</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/peijian3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>东芝v8 2.5英寸移动硬盘</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/peijian4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>幻响风小扇	幻响风小扇</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/peijian5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>ORICO 4口USB智能充电器</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-children-left">
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/peijian5.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅族豌豆钥匙包</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/peijian4.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>东芝黑甲虫2.5寸移动硬盘</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/peijian3.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>闪迪至尊高速OTG手机U盘</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/peijian2.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>三星750 SATA3 固态硬盘</span>
+                                    </a>
+                                </li>
+                                <li class="nav-children-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/peijian1.png" width="50" height="50" alt="魅蓝 U20">
+                                        <span>魅族熊猫金属钥匙扣</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-item-ad">
+                            <a href="#"><img src="images/peijian6.jpg" alt=""/></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--左侧导航-->
+<!--轮播图-->
+<div id="MzHomeSlider" class="home-slider">
+    <div class="home-slider-items">
+        <div class="bx-wrapper">
+            <div class="bx-viewport">
+                <ul class="bxslider">
+                    <li class="home-slider-box" style="display: block;margin-left: -960px;"><a href="#"
+                                                                                               class="home-slider-image"><img
+                            src="images/lxj4.jpg"
+                            alt=""/></a></li>
+                    <li class="home-slider-box"><a href="#" class="home-slider-image"><img src="images/lxj2.jpg"
+                                                                                           alt=""/></a></li>
+                    <li class="home-slider-box"><a href="#" class="home-slider-image"><img src="images/lxj3.jpg"
+                                                                                           alt=""/></a></li>
+                    <li class="home-slider-box"><a href="#" class="home-slider-image"><img src="images/lxj1.png"
+                                                                                           alt=""/></a></li>
+                    <li class="home-slider-box"><a href="#" class="home-slider-image"><img src="images/lxj5.png"
+                                                                                           alt=""/></a></li>
+                </ul>
+                <ol></ol>
+            </div>
+            <!--左右焦点层-->
+            <div class="bx-controls-direction">
+                <a class="bx-prev" href="javascript:void(0);">Prev</a>
+                <a class="bx-next" href="javascript:void(0);">Next</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--轮播图-->
+<!--内容部分-->
+<div class="cengji">
+    <div class="content0 w clearfix">
+        <div class="home-box">
+            <div class="publicbox0">
+                <a href="#">
+                    <img src="images/0-1.png" width="24" height="24"/><br/>
+                    M码通道
+                </a>
+            </div>
+            <div class="publicbox0">
+                <a href="#">
+                    <img src="images/0-2.png" width="24" height="24"/><br/>
+                    以旧换新
+                </a>
+            </div>
+            <div class="publicbox0">
+                <a href="#">
+                    <img src="images/0-3.png" width="24" height="24"/><br/>
+                    魅族意外保
+                </a>
+            </div>
+            <div class="publicbox0">
+                <a href="#">
+                    <img src="images/0-4.png" width="24" height="24"/><br/>
+                    回购单查询
+                </a>
+            </div>
+        </div>
+        <div class="home-ad">
+            <a href="#"><img src="images/0-5.jpg" width="240" height="140"/></a>
+        </div>
+        <div class="home-ad">
+            <a href="#"><img src="images/0-6.jpg" width="240" height="140"/></a>
+        </div>
+        <div class="home-ad">
+            <a href="#"><img src="images/0-7.jpg" width="240" height="140"/></a>
+        </div>
+        <div class="home-ad">
+            <a href="#"><img src="images/0-8.jpg" width="240" height="140"/></a>
+        </div>
+    </div>
+</div>
+
+<div class="cengji">
+    <div class="content1 w">
+        <div class="hd clearfix">
+            <div class="title">小米明星单品</div>
+            <div class="more">
+                <a href="javascript:void(0);" class="left" id="arrow-l">&lt;</a>
+                <a href="javascript:void(0);" class="right" id="arrow-r">&gt;</a>
+            </div>
+        </div>
+        <div class="bd clearfix" id="con1-bd">
+            <ul class="publicboxes1" id="publicboxes1">
+                <li class="publicbox1 publicbox1-1">
+                    <a href="#"><img src="images/1-1.jpg" width="160" height="160"/></a>
+
+                    <h3 class="title"><a href="#">小米手机5 高配版</a></h3>
+
+                    <p class="desc">3GB内存＋64GB容量，玻璃版</p>
+
+                    <p class="price">2099元</p>
+                </li>
+                <li class="publicbox1 publicbox1-2">
+                    <a href="#"><img src="images/1-2.png" width="160" height="160"/></a>
+
+                    <h3 class="title"><a href="#">小米Max 高配版</a></h3>
+
+                    <p class="desc">6.44英寸大屏，3GB内存+64GB容量</p>
+
+                    <p class="price">1699元</p>
+                </li>
+                <li class="publicbox1 publicbox1-3">
+                    <a href="#"><img src="images/1-3.png" width="160" height="160"/></a>
+
+                    <h3 class="title"><a href="#">红米手机3S</a></h3>
+
+                    <p class="desc">金属机身，指纹识别，超长待机</p>
+
+                    <p class="price">699元</p>
+                </li>
+                <li class="publicbox1 publicbox1-4">
+                    <a href="#"><img src="images/1-4.png" width="160" height="160"/></a>
+
+                    <h3 class="title"><a href="#">小米笔记本</a></h3>
+
+                    <p class="desc">独立显卡、超轻薄、金属机身</p>
+
+                    <p class="price">3499元起</p>
+                </li>
+                <li class="publicbox1 publicbox1-5">
+                    <a href="#"><img src="images/1-5.jpg" width="160" height="160"/></a>
+
+                    <h3 class="title"><a href="#">小米平板2 16GB现货</a></h3>
+
+                    <p class="desc">轻薄全金属，海量内容</p>
+
+                    <p class="price">999元</p>
+                </li>
+                <li class="publicbox1 publicbox1-6">
+                    <a href="#"><img src="images/1-6.png" width="160" height="160"/></a>
+
+                    <h3 class="title"><a href="#">小米电视3S 48英寸</a></h3>
+
+                    <p class="desc">原装液晶屏，金属机身</p>
+
+                    <p class="price">1999元</p>
+                </li>
+                <li class="publicbox1 publicbox1-7">
+                    <a href="#"><img src="images/1-7.jpg" width="160" height="160"/></a>
+
+                    <h3 class="title"><a href="#">小米盒子3 增强版</a></h3>
+
+                    <p class="desc">高端 4K 网络机顶盒</p>
+
+                    <p class="price">399元</p>
+                </li>
+                <li class="publicbox1 publicbox1-8">
+                    <a href="#"><img src="images/1-8.png" width="160" height="160"/></a>
+
+                    <h3 class="title"><a href="#">小米手环 2</a></h3>
+
+                    <p class="desc">每天早10点开售</p>
+
+                    <p class="price">149元</p>
+                </li>
+                <li class="publicbox1 publicbox1-9">
+                    <a href="#"><img src="images/1-9.jpg" width="160" height="160"/></a>
+
+                    <h3 class="title"><a href="#">米家 LED 智能台灯</a></h3>
+
+                    <p class="desc">无可视频闪，亮度色温无级调节</p>
+
+                    <p class="price">169元</p>
+                </li>
+                <li class="publicbox1 publicbox1-10">
+                    <a href="#"><img src="images/1-10.jpg" width="160" height="160"/></a>
+
+                    <h3 class="title"><a href="#">小米空气净化器2</a></h3>
+
+                    <p class="desc">10分钟，房间空气焕然一新</p>
+
+                    <p class="price">699元</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content2">
+    <div class="w">
+        <div class="hd clearfix">
+            <div class="title">智能硬件</div>
+            <div class="more">
+                <a href="javascript:void(0);">查看全部<span>&gt;</span></a>
+            </div>
+        </div>
+        <div class="bd clearfix">
+            <div id="con2-l" class="con2-l  clearfix">
+                <a href="#"><img src="images/2-1.jpg" width="234" height="614"/></a>
+            </div>
+            <div class="con2-r clearfix">
+                <ul id="publicboxes2">
+                    <li class="publicbox2">
+                        <a href="#"><img src="images/2-2.jpg" width="160" height="160"/></a>
+
+                        <h3 class="title"><a href="#">小米路由器3</a></h3>
+
+                        <p class="desc">四天线设计，更安全更稳定</p>
+
+                        <p class="price">149元</p>
+                    </li>
+                    <li class="publicbox2">
+                        <a href="#"><img src="images/2-3.jpg" width="160" height="160"/></a>
+
+                        <h3 class="title"><a href="#">电助力折叠自行车</a></h3>
+
+                        <p class="desc">力矩传感电助力，让城市出行轻松有趣</p>
+
+                        <p class="price">2999元</p>
+                    </li>
+                    <li class="publicbox2">
+                        <a href="#"><img src="images/2-4.jpg" width="160" height="160"/></a>
+
+                        <h3 class="title"><a href="#">小米VR眼镜玩具版</a></h3>
+
+                        <p class="desc">观看新体验，每天早10点开售</p>
+
+                        <p class="price">49元</p>
+                    </li>
+                    <li class="publicbox2">
+                        <a href="#"><img src="images/2-5.jpg" width="160" height="160"/></a>
+
+                        <h3 class="title"><a href="#">小米净水器 厨下式</a></h3>
+
+                        <p class="desc">RO反渗透直出纯净水，包邮包安装</p>
+
+                        <p class="price">1999元起</p>
+                    </li>
+                    <li class="publicbox2">
+                        <a href="#"><img src="images/2-6.jpg" width="160" height="160"/></a>
+
+                        <h3 class="title"><a href="#">米兔儿童电话手表</a></h3>
+
+                        <p class="desc">安全防走丢，宝贝的贴身护卫</p>
+
+                        <p class="price">299元</p>
+                    </li>
+                    <li class="publicbox2">
+                        <a href="#"><img src="images/2-7.jpg" width="160" height="160"/></a>
+
+                        <h3 class="title"><a href="#">米家压力IH电饭煲</a></h3>
+
+                        <p class="desc">智能烹饪，3L 容量</p>
+
+                        <p class="price">999元</p>
+                    </li>
+                    <li class="publicbox2">
+                        <a href="#"><img src="images/2-8.jpg" width="160" height="160"/></a>
+
+                        <h3 class="title"><a href="#">全系智能套装限时款</a></h3>
+
+                        <p class="desc">开启你的智能生活</p>
+
+                        <p class="price">292元</p>
+                    </li>
+                    <li class="publicbox2">
+                        <a href="#"><img src="images/2-9.jpg" width="160" height="160"/></a>
+
+                        <h3 class="title"><a href="#">小米体重秤</a></h3>
+
+                        <p class="desc">喝杯水都可感知的精准</p>
+
+                        <p class="price">99元</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content3">
+    <div class="w clearfix">
+        <div class="hd clearfix">
+            <div class="title">搭配</div>
+            <div class="tabTop">
+                <ul>
+                    <li class="currrentTop">热门</li>
+                    <li>耳机音箱</li>
+                    <li>电源</li>
+                    <li>电池存储卡</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bd">
+            <div class="con3-l">
+                <div class="con3-l-item">
+                    <a href="#"><img src="images/3-1.jpg" alt=""/></a>
+                </div>
+                <div class="con3-l-item">
+                    <a href="#"><img src="images/3-6.jpg" alt=""/></a>
+                </div>
+            </div>
+            <div class="con3-r">
+                <div class="tab tab1">
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-2.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米移动电源10000mAh</a></h3>
+
+                        <p class="price">79元</p>
+
+                        <p class="desc">19.3万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">做工沒的說，摸起來手感非常細膩，而且比起傳統的插線板...</p>
+
+                            <p class="author"> 来自于 林岐城 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-3.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米活塞耳机 基础版</a></h3>
+
+                        <p class="price">29元</p>
+
+                        <p class="desc">5.8万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">价钱优惠，音质好。值得推荐</p>
+
+                            <p class="author"> 来自于 1006768313 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-4.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米圈铁耳机</a></h3>
+
+                        <p class="price">99元</p>
+
+                        <p class="desc">1.5万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">一上手就试试，音质还不错，煲机后会更好</p>
+
+                            <p class="author"> 来自于 张杰奇 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-5.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米移动电源10000mAh 高配版</a></h3>
+
+                        <p class="price">149元</p>
+
+                        <p class="desc">2.1万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">手感超舒服，有USB C输入充电，以后不用到处换插头了</p>
+
+                            <p class="author"> 来自于 玻璃樽81 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-7.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米插线板</a></h3>
+
+                        <p class="price">49元</p>
+
+                        <p class="desc">24.9万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">里面的做工也就是看看工程图介绍，没打开看过。外表的近...</p>
+
+                            <p class="author"> 来自于 江南晴天 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-8.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米蓝牙耳机</a></h3>
+
+                        <p class="price">79元</p>
+
+                        <p class="desc">9万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">1.非常好用，戴起来很舒适2.音质不错，比某些大品牌...</p>
+
+                            <p class="author"> 来自于 什排地帅哥 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-9.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米小钢炮蓝牙音箱2</a></h3>
+
+                        <p class="price">129元</p>
+
+                        <p class="desc">1.3万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">小米节礼券立减50，千值万值啊！物流很快，第二天就到...</p>
+
+                            <p class="author"> 来自于 潇逸云 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-10.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米小钢炮</a></h3>
+
+                        <p class="price">99元</p>
+
+                        <p class="desc">1.3万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">小米节礼券立减50，千值万值啊！物流很快，第二天就到...</p>
+
+                            <p class="author"> 来自于 潇逸云 的评价 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab tab2">
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-2-1.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米活塞耳机 基础版</a></h3>
+
+                        <p class="price">29元</p>
+
+                        <p class="desc">5.7万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">音质非常的好，很震撼！！美美美！</p>
+
+                            <p class="author"> 来自于 米米小米aa 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-2-2.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米圈铁耳机</a></h3>
+
+                        <p class="price">99元</p>
+
+                        <p class="desc">1.5万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">一上手就试试，音质还不错，煲机后会更好</p>
+
+                            <p class="author"> 来自于 张杰奇 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-2-3.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米胶囊耳机</a></h3>
+
+                        <p class="price">59元</p>
+
+                        <p class="desc">1.2万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">拿到手，感觉很炫！试了一下，音质挺好！挺喜欢！5星好评</p>
+
+                            <p class="author"> 来自于 程桂兴吖 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-2-4.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米蓝牙耳机</a></h3>
+
+                        <p class="price">79元</p>
+
+                        <p class="desc">8.9万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">1.非常好用，戴起来很舒适2.音质不错，比某些大品牌...</p>
+
+                            <p class="author"> 来自于 什排地帅哥 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-2-5.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米小钢炮蓝牙音箱2</a></h3>
+
+                        <p class="price">129元</p>
+
+                        <p class="desc">1.2万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">很精致，小巧可爱，连接成功是女声说话提示。音质很纯很...</p>
+
+                            <p class="author"> 来自于 Cc大坏 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-2-6.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米随身蓝牙音箱</a></h3>
+
+                        <p class="price">59元</p>
+
+                        <p class="desc">7859人评价</p>
+
+                        <div class="eva">
+                            <p class="review">小巧，便携，连接方便还有电量显示！总体很不错，可以挂...</p>
+
+                            <p class="author"> 来自于 佰亊柒禧 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-2-7.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米蓝牙音箱</a></h3>
+
+                        <p class="price">199元</p>
+
+                        <p class="desc">1.9万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">199能有这效果有点惊喜</p>
+
+                            <p class="author"> 来自于 efunliu 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-2-8.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米小钢炮</a></h3>
+
+                        <p class="price">99元</p>
+
+                        <p class="desc">1.3万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">小米节礼券立减50，千值万值啊！物流很快，第二天就到...</p>
+
+                            <p class="author"> 来自于 潇逸云 的评价 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab tab3">
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-3-1.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">移动电源5000mAh</a></h3>
+
+                        <p class="price">49元</p>
+
+                        <p class="desc">8.9万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">做工沒的說，摸起來手感非常細膩，而且比起傳統的插線板...</p>
+
+                            <p class="author"> 来自于 林岐城 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-3-2.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">移动电源10000mAh</a></h3>
+
+                        <p class="price">79元</p>
+
+                        <p class="desc">19.3万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">价钱优惠，音质好。值得推荐</p>
+
+                            <p class="author"> 来自于 1006768313 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-3-3.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">移动电源10000mAh 高配版</a></h3>
+
+                        <p class="price">149元</p>
+
+                        <p class="desc">2.1万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">一上手就试试，音质还不错，煲机后会更好</p>
+
+                            <p class="author"> 来自于 张杰奇 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-3-4.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">移动电源20000mAh</a></h3>
+
+                        <p class="price">149元</p>
+
+                        <p class="desc">4.8万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">手感超舒服，有USB C输入充电，以后不用到处换插头了</p>
+
+                            <p class="author"> 来自于 玻璃樽81 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-3-5.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">10000mAh小米移动电源保护套</a></h3>
+
+                        <p class="price">19.9元</p>
+
+                        <p class="desc">2万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">里面的做工也就是看看工程图介绍，没打开看过。外表的近...</p>
+
+                            <p class="author"> 来自于 江南晴天 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-3-6.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米插线板（3孔位+USB）</a></h3>
+
+                        <p class="price">49元</p>
+
+                        <p class="desc">24.9万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">1.非常好用，戴起来很舒适2.音质不错，比某些大品牌...</p>
+
+                            <p class="author"> 来自于 什排地帅哥 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-3-7.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米USB充电器（4口）</a></h3>
+
+                        <p class="price">69元</p>
+
+                        <p class="desc">7490人评价</p>
+
+                        <div class="eva">
+                            <p class="review">小米节礼券立减50，千值万值啊！物流很快，第二天就到...</p>
+
+                            <p class="author"> 来自于 潇逸云 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-3-8.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米插线板</a></h3>
+
+                        <p class="price">39元</p>
+
+                        <p class="desc">2.5万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">小米节礼券立减50，千值万值啊！物流很快，第二天就到...</p>
+
+                            <p class="author"> 来自于 潇逸云 的评价 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab tab4">
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-4-1.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">SanDisk 16GB存储卡（Class4）</a></h3>
+
+                        <p class="price">26.9元</p>
+
+                        <p class="desc">7.9万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">做工沒的說，摸起來手感非常細膩，而且比起傳統的插線板...</p>
+
+                            <p class="author"> 来自于 林岐城 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-4-2.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">原装快充套装</a></h3>
+
+                        <p class="price">58元</p>
+
+                        <p class="desc">0人评价</p>
+
+                        <div class="eva">
+                            <p class="review">价钱优惠，音质好。值得推荐</p>
+
+                            <p class="author"> 来自于 1006768313 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-4-3.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">彩虹5号电池（10粒装）</a></h3>
+
+                        <p class="price">9.9元</p>
+
+                        <p class="desc">7万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">一上手就试试，音质还不错，煲机后会更好</p>
+
+                            <p class="author"> 来自于 张杰奇 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-4-4.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">彩虹7号电池（10粒装）</a></h3>
+
+                        <p class="price">9.9元</p>
+
+                        <p class="desc">4.1万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">手感超舒服，有USB C输入充电，以后不用到处换插头了</p>
+
+                            <p class="author"> 来自于 玻璃樽81 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-4-5.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">米兔手机U盘升级版 32GB</a></h3>
+
+                        <p class="price">79元</p>
+
+                        <p class="desc">2.9万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">里面的做工也就是看看工程图介绍，没打开看过。外表的近...</p>
+
+                            <p class="author"> 来自于 江南晴天 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-4-6.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">紫5镍氢充电电池</a></h3>
+
+                        <p class="price">29元</p>
+
+                        <p class="desc">2611人评价</p>
+
+                        <div class="eva">
+                            <p class="review">1.非常好用，戴起来很舒适2.音质不错，比某些大品牌...</p>
+
+                            <p class="author"> 来自于 什排地帅哥 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-4-7.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">小米车载充电器</a></h3>
+
+                        <p class="price">49元</p>
+
+                        <p class="desc">3万人评价</p>
+
+                        <div class="eva">
+                            <p class="review">小米节礼券立减50，千值万值啊！物流很快，第二天就到...</p>
+
+                            <p class="author"> 来自于 潇逸云 的评价 </p>
+                        </div>
+                    </div>
+                    <div class="publicbox3">
+                        <a href="#"><img src="images/3-4-8.jpg" width="150" height="150"/></a>
+
+                        <h3 class="title"><a href="#">红米2/红米2A座充套装</a></h3>
+
+                        <p class="price">69元</p>
+
+                        <p class="desc">8981人评价</p>
+
+                        <div class="eva">
+                            <p class="review">小米节礼券立减50，千值万值啊！物流很快，第二天就到...</p>
+
+                            <p class="author"> 来自于 潇逸云 的评价 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容部分-->
+
+<!--底部-->
+<div id="foots" class="footer">
+    <div class="vivo-logo">
+        <img src="images/vivo-f-logo.jpg" alt=""/>
+    </div>
+    <div class="vivo-share">
+        <div class="vivo-share-links">
+            <a class="weibo" href="#"><i></i></a>
+            <a id="wei" class="weixin" href="#"><i></i></a>
+            <a class="vi" href="#"><i></i></a>
+            <a class="tieba" href="#"><i></i></a>
+            <a class="buluo" href="#"><i></i></a>
+            <s></s>
+            <a class="kefu" href="#"><i></i>
+                小V在线客服
+            </a>
+
+            <div class="box1">
+                <em></em><s></s>
+            </div>
+        </div>
+    </div>
+    <div class="vivo-links">
+        <a href="">新闻中心</a>
+        <a href="">vivo招聘</a>
+        <a href="">vivo摄影</a>
+        <a href="">采购平台</a>
+        <a href="">开发者平台</a>
+        <a href="">手机寻回</a>
+        <a href="">网站地图</a>
+        <a href="">手机真伪查询</a>
+        <a href="">免费声明</a>
+        <a class="jiantou" href="">EngLish<i></i></a>
+    </div>
+    <div class="vivo-copy">
+        <p>COPYRIGHT © 1996-2016
+            <br/>
+            ALL RIGHTS RESERVED.
+            <a href="#">粤ICP备05100288号</a>
+        </p>
+    </div>
+    <div class="show">
+        <a class="ico" href="javascript:void(0);"><i></i></a>
+    </div>
+</div>
+<!--底部-->
+</body>
+</html>

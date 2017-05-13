@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>手机商城</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="css/bigBanner.css"/>
+    <link rel="stylesheet" href="css/CG.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/css.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/bigBanner.js"></script>
+    <script src="js/ASD.js"></script>
+    <script src="js/sns.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="header-box" id="header_box">
+    <!--头部导航-->
+    <div class="header clearfix" id="header">
+        <!--导航中的三个部分-->
+        <div class="w wrap">
+            <!--logo部分-->
+            <div class="header-logo fl">
+                <img src="images/header-logo.png" width="130px" height="80px" alt=""/>
+            </div>
+            <!--用户登录部分-->
+            <div class="header-user fr">
+                <!--右侧登录按钮-->
+                <div class="header-user-img" id="header_user_img">
+                    <img src="images/nav-user.png" alt=""/>
+                    <i></i><s></s>
+                </div>
+                <!--显示登录框功能-->
+                <div class="loginbar" id="loginbar">
+                    <div class="header-user-box" id="header_user_box"></div>
+                    <div class="header-user-trigger" id="header_user_trigger">
+                        <ul>
+                            <li class="trigger-top"></li>
+                            <li><input type="button" value="立即登录" class="btn" id="button"/></li>
+                            <li><span><a href="#">没有账号？</a></span><em><a href="#">立即注册</a></em></li>
+                            <li><a href="#">我的购物车</a></li>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">M码通道</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--中间导航部分-->
+            <ul class="header-link fr">
+                <li><a href="shoplist.html" id="shop">魅族商城</a></li>
+                <li><a href="#" id="mx">魅蓝手机</a></li>
+                <li><a href="#" id="mz">魅族手机</a></li>
+                <li><a href="#" id="flag">手机配件</a></li>
+                <li><a href="#" id="commu">专卖店</a></li>
+                <li><a href="#" id="only">Flyme</a></li>
+                <li><a href="#" id="serv">服务</a></li>
+                <li><a href="#" id="about">社区</a></li>
+            </ul>
+        </div>
+        <!--立即登录弹出框-->
+        <div class="login" id="login">
+            <h3 id="welcome">欢迎登陆</h3>
+
+            <div class="admin">
+                <span class="low fl">账号：</span><input type="text" id="admin" placeholder="请输入账号"/><span id="ale"></span><br/>
+            </div>
+            <div class="password">
+                <span class="low fl">密码：</span><input type="text" id="password" placeholder="请输入密码"/><span
+                    id="pass"></span><br/>
+            </div>
+            &nbsp; <a href="javascript:;" onclick="haha()">立即登录</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#">忘记密码</a>
+            <i>×</i>
+        </div>
+        <script>
+            function haha() {
+                if ($("#password")[0].value == "" || ("#admin")[0].value == "") {
+                    $("#pass").text("请输入密码")
+                    $("#pass").css("color", "red")
+                    $("#ale").text("请输入账号")
+                    $("#ale").css("color", "red")
+                } else {
+                    if ($("#ale")[0].innerText == "") {
+                        $("#ale").text("")
+                    }
+                }
+            }
+        </script>
+        <!--body遮罩层-->
+        <div class="rubbish" id="rubbish"></div>
+    </div>
+
+    <!--头部导航下拉-->
+    <div class="header-sub" id="header_sub">
+        <!--**手机-->
+        <div class="shaw" id="shaw"></div>
+        <div class="header-mz-sub-wrap" id="header_mz_sub_wrap">
+            <ul class="header-mx-bottom" id="header_mx_bottom">
+                <li><img src="images/nav-phone4.png" alt=""/><br/><a href="#">魅族MX6</a></li>
+                <li><img src="images/nav-phone5.png" alt=""/><br/><a href="#">魅族PRO 5</a></li>
+                <li><img src="images/nav-phone2.png" alt=""/><br/><a href="#">魅族PRO 6</a></li>
+                <li><img src="images/nav-phone6.png" alt=""/><br/><a href="#">魅蓝note</a></li>
+            </ul>
+        </div>
+        <!--**手机2-->
+        <div class="header-ml-sub-wrap" id="header_ml_sub_wrap">
+            <ul class="header-mz-bottom" id="header_mz_bottom">
+                <li><img src="images/nav-phone4.png" alt=""/><br/><a href="#">魅蓝note</a></li>
+                <li><img src="images/nav-phone4.png" alt=""/><br/><a href="#">魅族x5</a></li>
+                <li><img src="images/nav-phone1.png" alt=""/><br/><a href="#">魅族MX5e</a></li>
+                <li><img src="images/nav-phone1.png" alt=""/><br/><a href="#">魅族 PR0 6</a></li>
+                <li><img src="images/nav-phone2.png" alt=""/><br/><a href="#">魅蓝 U20</a></li>
+                <li><img src="images/nav-phone3.png" alt=""/><br/><a href="#">魅蓝note 3</a></li>
+            </ul>
+        </div>
+        <!--**手机配件-->
+        <div class="header-flag-sub-wrap" id="header_flag_sub_wrap">
+            <ul class="header-flag-bottom" id="header_flag_bottom">
+                <li><img src="images/nav-flag1.png" alt=""/><br/><a href="#">魅族计时器</a></li>
+                <li><img src="images/nav-flag2.png" alt=""/><br/><a href="#">魅蓝E</a></li>
+                <li><img src="images/nav-flag3.png" alt=""/><br/><a href="#">魅族耳机</a></li>
+                <li><img src="images/nav-flag4.png" alt=""/><br/><a href="#">魅族盒子</a></li>
+                <li><img src="images/nav-flag5.png" alt=""/><br/><a href="#">先锋 SEC</a></li>
+                <li><img src="images/nav-flag6.png" alt=""/><br/><a href="#">魅族充电宝</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--头部-->
+<!--轮播图-->
+<div class="bigBanner" id='bigBanner'>
+    <div class="screen">
+        <ul>
+
+
+            <li class="vivo-x7gray" style="width: 1366px;">
+                <div class="vivo-h-stage">
+                    <div class="title">
+                        <h2><img src="images/vm-h-x7gray-title-mini.png" width="266" height="114" alt="X7 星空灰"></h2>
+                        <div class="more"><span class="vivo--ico">新品首发</span></div>
+                    </div>
+                    <div class="figure">
+                        <em class="f1"><img src="images/vm-h-x7gray-figure1-mini.png" width="1064" height="950" alt="X7 星空灰"></em>
+                        <em class="f2"><img src="images/vm-h-x7gray-figure2-mini.png" width="1064" height="950" alt="X7 星空灰"></em>
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li class="vivo-x7sale" style="">
+                <div class="vivo-h-stage">
+                    <div class="title">
+                        <h2><img src="images/vm-h-x7sale-title-mini.png" width="280" height="120" alt="X7Plus新品首发"></h2>
+                        <div class="more"><span class="vivo--ico">新品上市</span></div>
+                    </div>
+                    <div class="figure">
+                        <i></i>
+                        <em class="f1"><img src="images/vm-h-x7sale-figure1-mini.png" width="624" height="696" alt="X7Plus新品首发"></em>
+                        <em class="f2"><img src="images/vm-h-x7sale-figure2-mini.png" width="624" height="696" alt="X7Plus新品首发"></em>
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li class="vivo-xplay5" style="">
+                <div class="vivo-h-stage">
+                    <div class="title">
+                        <h2><img src="images/vm-h-xplay5-title-mini.png" width="280" height="88" alt="vivo xplay5"></h2>
+                        <div class="more"><span class="vivo--ico">查看详情</span></div>
+                    </div>
+                    <div class="figure"><img src="images/vm-h-xplay5-figure-mini.jpg" width="1520" height="1152" alt="vivo xplay5"></div>
+                </div>
+            </li>
+
+
+            <li class="vivo-v3" style="">
+                <div class="vivo-h-stage">
+                    <div class="title">
+                        <h2><img src="images/vm-h-v3-title-mini.png" width="288" height="108" alt="vivo V3Max全网通"></h2>
+                        <div class="more"><span class="vivo--ico">畅快体验</span></div>
+                    </div>
+                    <div class="figure">
+                        <em class="f2"><img src="images/vm-h-v3-shadow-mini.png" width="1200" height="920" alt="vivo V3Max全网通"></em>
+                        <em class="f1"><img src="images/vm-h-v3-figure-mini.png" width="1200" height="920" alt="vivo V3Max全网通"></em>
+                    </div>
+                </div>
+            </li>
+            <li class="vivo-x6s" style="">
+                <div class="vivo-h-stage">
+                    <div class="title">
+                        <h2><img src="images/vm-h-x6s-title-mini.jpg" width="400" height="108" alt="vivo X6S&amp;X6SPlus全网通"></h2>
+                        <div class="more"><span class="vivo--ico">查看详情</span></div>
+                    </div>
+                    <div class="figure">
+                        <em class="f1"><img src="images/vm-h-x6s-figure1-mini.png" width="480" height="696" alt="vivo X6S&amp;X6SPlus全网通"></em>
+                        <em class="f2"><img src="images/vm-h-x6s-figure2-mini.png" width="480" height="696" alt="vivo X6S&amp;X6SPlus全网通"></em>
+                        <em class="f3"><img src="images/vm-h-x6s-figure3-mini.png" width="480" height="696" alt="vivo X6S&amp;X6SPlus全网通"></em>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ol>
+        </ol>
+    </div>
+</div>
+<!--轮播图-->
+<!--推荐商品-->
+<div class="CG2">
+    <div class="CGproduct center">
+        <h2>
+            <li></li>
+            <strong>推荐产品</strong>
+        </h2>
+        <div class="CGpics">
+            <ul>
+                <li class="l1">
+                    <a href="#">
+                        <div>
+                            <img src="images/x7-promos-figure.jpg" alt=""/>
+                        </div>
+                        <h2>
+                            <img src="images/x7-promos-title.jpg" alt=""/>
+                        </h2>
+                    </a>
+                </li>
+                <li class="l2">
+                    <a href="#">
+                        <h3>
+                            <img src="images/promos-br-title.jpg" alt=""/>
+                        </h3>
+                        <div>
+                            <img src="images/promos-bl-pic.jpg" alt=""/>
+                        </div>
+                    </a>
+                </li>
+                <li class="l3">
+                    <a href="#">
+                        <div>
+                            <img src="images/xe800-promos-3.png" alt=""/>
+                        </div>
+                        <h3>
+                            <p></p>
+                        </h3>
+                    </a>
+                </li>
+                <li class="l4">
+                    <a href="#">
+                        <div>
+                            <img src="images/promos-v3.jpg" alt=""/>
+                        </div>
+                        <h3>
+                            <img src="images/promos-v3-title.jpg" alt=""/>
+                        </h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!--推荐商品-->
+<div id="lxj" style="background-color: #fff">
+    <!--底部nb特效-->
+    <div id="cbg-sns" class="cbg-dark">
+        <div class="cbg-feeds cbg-club-feeds flexslider clearfix">
+            <div class="heading">
+                <div class="cbg-overlay">
+                </div>
+                <div class="heading-inner">
+                    <a href="#" target="_blank">
+                        花粉俱樂部
+                    </a>
+                </div>
+            </div>
+            <ul class="slides" id="slides_01">
+
+            </ul>
+
+            <ul class="flex-direction-nav" id="flex-nav01">
+                <li><a class="flex-prev" href="#"></a></li>
+                <li><a class="flex-next" href="#"></a></li>
+            </ul>
+        </div>
+        <div class="cbg-feeds cbg-youku-feeds flexslider clearfix" data-sns="youku" data-p-val="view-b3">
+            <div class="heading">
+                <div class="cbg-overlay"></div>
+                <div class="heading-inner">
+                    <a href="#" data-t-cat="consumer-cn" data-t-act="homepage-sns-click" data-t-label="youku-heading"
+                       target="_blank">
+                        优酷
+                    </a>
+                </div>
+            </div>
+            <ul class="slides" id="slides_02">
+            </ul>
+
+            <ul class="flex-direction-nav" id="flex-nav02">
+                <li><a class="flex-prev" href="#"></a></li>
+                <li><a class="flex-next" href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--底部nb特效-->
+</div>
+
+
+</body>
+</html>

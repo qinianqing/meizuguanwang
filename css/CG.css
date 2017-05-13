@@ -1,0 +1,212 @@
+.center {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.CG2 {
+    background-color: #fafafa;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    z-index: 10;
+    padding-bottom: 50px;
+}
+
+.CGproduct h2 {
+    height: 80px;
+    line-height: 80px;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.CGproduct h2 li {
+    height: 1px;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #dcdcdc;
+}
+
+.CGproduct h2 strong {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+    background: #fafafa;
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: normal;
+    position: relative;
+}
+
+.CGpics {
+    height: 665px;
+    overflow: hidden;
+    position: relative;
+    border: 1px #eee solid;
+    background: #fff;
+}
+
+.CGpics li {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+
+.CGpics .l1 {
+    width: 714px;
+    height: 332px;
+    top: 0;
+    left: 0;
+    background: #47afe6;
+}
+
+.CGpics .l1 a {
+    height: 332px;
+    position: relative;
+    display: block;
+}
+
+.CGpics .l1 a div {
+    width: 714px;
+    height: 332px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.CGpics .l1 a h2 {
+    width: 230px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    top: 150px;
+}
+
+.CGpics .l1 a div img {
+    width: 714px;
+    height: 332px;
+}
+
+.CGpics .l2 {
+    width: 383px;
+    height: 665px;
+    top: 0;
+    right: 0;
+    border-left: 1px #eee solid;
+}
+
+.CGpics li a {
+    display: block;
+    position: relative;
+}
+
+.CGpics .l2 a h3 {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    z-index: 9;
+}
+
+.CGpics .l2 a div {
+    width: 383px;
+    height: 765px;
+    position: absolute;
+}
+
+.CGpics .l2 a div img {
+    width: 383px;
+    height: 765px;
+    z-index: 1;
+}
+
+.CGpics .l3 {
+    width: 357px;
+    height: 332px;
+    top: 333px;
+    left: 0;
+    border-right: 1px #eee solid;
+    background: #ff97b7;
+    color: #fff;
+}
+
+.CGpics .l3 a {
+    display: block;
+    color: #fff;
+    position: relative;
+    height: 332px;
+}
+
+.CGpics .l3 a div {
+    width: 260px;
+    height: 302px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    z-index: 1;
+}
+
+.CGpics .l3 a div img {
+    width: 260px;
+    height: 302px;
+}
+
+.CGpics .l3 a h3 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 2;
+    display: block;
+    font-size: 24px;
+    padding: 0;
+}
+
+.CGpics .l4 {
+    width: 356px;
+    height: 332px;
+    top: 333px;
+    left: 358px;
+    background: #ffd25a;
+    color: #fff;
+}
+
+.CGpics .l4 a {
+    color: #fff;
+    height: 332px;
+    position: relative;
+    display: block;
+}
+
+.CGpics .l4 a div {
+    width: 700px;
+    height: 332px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.CGpics .l4 a div img {
+    width: 700px;
+    height: 332px;
+}
+
+.CGpics .l4 a h3 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 2;
+    display: block;
+    font-size: 24px;
+    padding: 0;
+}
+
+.CGpics .l4 a h3 img {
+    width: 160px;
+    height: 18px;
+}

@@ -1,0 +1,253 @@
+
+/*底部 start*/
+
+
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: #222;
+    z-index: 1;
+    position: fixed;
+    /*left: 0;*/
+    bottom: 0;
+    display: block;
+    /*visibility: visible;*/
+}
+.vivo-logo{
+    width: 100%;
+    /*height: 110px;*/
+    padding: 40px 0 20px 0;
+    text-align: center;
+    /*line-height: 110px;*/
+}
+.vivo-share{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+.vivo-share-links .box1 em{
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    left: 425px;
+    top: -120px;
+    background: url(../images/vf-weixin-overbox-ico.jpg) no-repeat;
+}
+.vivo-share-links .box1 s{
+    width: 17px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    left: 474px;
+    top: -21px;
+    background: url(../images/vivo-gb-ico.png) -90px 0px no-repeat;
+}
+.vivo-share-links .box1{
+    display: none;
+}
+
+.vivo-share-links{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    position: relative;
+}
+.vivo-share-links a{
+    border-radius: 50%;
+    background-color: #666;
+    margin: 0 15px;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+.vivo-share-links .weibo{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    position: relative;
+}
+
+.vivo-share-links .weibo i{
+    display: block;
+    background: url(../images/vivo-gb-ico.png) -433px -94px no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 13px;
+    top: 14px;
+}
+.vivo-share-links .weibo:hover{
+    background-color: #C83E3D;
+}
+.vivo-share-links .weixin{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    position: relative;
+}
+.vivo-share-links .weixin:hover{
+    background-color: green;
+}
+.vivo-share-links .weixin i{
+    display: block;
+    background: url(../images/vivo-gb-ico.png) -568px -94px no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+.vivo-share-links .vi{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    position: relative;
+}
+.vivo-share-links .vi:hover{
+    background-color: #0099cc;
+}
+.vivo-share-links .vi i{
+    display: block;
+    background: url(../images/vivo-gb-ico.png) -297px -94px no-repeat;
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    left: 13px;
+    top: 16px;
+}
+.vivo-share-links .tieba{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    position: relative;
+}
+.vivo-share-links .tieba:hover{
+    background-color: #0099cc;
+}
+.vivo-share-links .tieba i{
+    display: block;
+    background: url(../images/vivo-gb-ico.png) -342px -94px no-repeat;
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    left: 13px;
+    top: 14px;
+}
+.vivo-share-links .buluo{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+}
+.vivo-share-links .buluo:hover{
+    background-color: #0099cc;
+}
+.vivo-share-links .buluo i{
+    display: block;
+    background: url(../images/vivo-gb-ico.png) -207px -94px no-repeat;
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+}
+.vivo-share-links s{
+    display: inline-block;
+    width: 1px;
+    height: 45px;
+    background-color: #666;
+}
+.vivo-share-links .kefu{
+    display: inline-block;
+    width: 120px;
+    height: 28px;
+    border-radius: 18px;
+    color: #fff;
+    position: relative;
+    top: -16px;
+    margin-left: 45px;
+    font: 14px "微软雅黑";
+    padding-left: 20px;
+    padding-top: 8px;
+}
+.vivo-share-links .kefu:hover{
+    background-color: #0099cc;
+}
+.vivo-share-links .kefu i{
+    display: block;
+    background: url(../images/vivo-gb-ico.png) -253px -94px no-repeat;
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    left: 13px;
+    top: 9px;
+}
+.vivo-links{
+    text-align: center;
+}
+.vivo-links a{
+    display: inline-block;
+    height: 19px;
+    font: 400 15px "微软雅黑";
+    margin: 0 5px;
+}
+
+.vivo-links .jiantou{
+    position: relative;
+}
+.vivo-links .jiantou i{
+    width: 6px;
+    height: 8px;
+    display: block;
+    background: url(../images/vivo-gb-ico.png) -594px -125px no-repeat;
+    position: absolute;
+    top: 7px;
+    right: -10px;
+}
+.vivo-links a:hover{
+    color: #0099cc;
+}
+.vivo-copy{
+    margin-top: 20px;
+    height: 32px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+.vivo-copy a:hover{
+    color: #0099cc;
+}
+.show{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+}
+.show .ico{
+    width: 45px;
+    height: 45px;
+    /*position: relative;*/
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    background-color: #181818;
+    border-radius: 5px;
+    /*position: relative;*/
+}
+.show .ico:hover{
+    background-color: #0099cc;
+}
+.show .ico i{
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/vivo-gb-ico.png) -132px -11px no-repeat;
+    position: absolute;
+    left: 11px;
+    top: 10px;
+}
+/*底部 end*/
+

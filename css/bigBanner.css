@@ -1,0 +1,297 @@
+.bigBanner {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen li {
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.bigBanner li.vivo-x7gray{
+    background: #0B0B0B url(../images/vm-h-x7gray-bg-mini.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.bigBanner li.vivo-x7sale{
+    /*background: #5594e1;*/
+}
+.bigBanner li.vivo-xplay5{
+    background: #fff;
+}
+.bigBanner li.vivo-v3 {
+    background: #f2e0b1 url(../images/vm-h-v3-bg-mini.jpg) center center no-repeat;
+    background-size: cover;
+}
+.bigBanner li.vivo-x6s{
+    background: #fff;
+}
+
+
+
+li .vivo-h-stage {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*z-index: 2;*/
+}
+
+
+.bigBanner li .title {
+    position: absolute;
+    z-index: 9;
+	bottom: -60px;
+    opacity: 0"
+}
+.vivo-x7gray .title {
+    width: 350px;
+    height: auto;
+    bottom: -60px;
+    right: 60px;
+}
+.vivo-x7sale .title {
+    width: 350px;
+    bottom: -100px;
+    right: 20px;
+}
+.vivo-xplay5 .title {
+    width: 350px;
+    height: auto;
+    bottom: -50px;
+    right: -440px;
+}
+.vivo-v3 .title {
+    width: 360px;
+    bottom: -70px;
+    right: 50px;
+}
+.vivo-x6s .title {
+    width: 300px;
+    height: auto;
+    bottom: -100px;
+    right: -340px;
+}
+
+
+
+
+li .title h2 {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.vivo-x7gray .title h2 {
+    height: 75px;
+}
+.vivo-x7sale .title h2 {
+    height: 75px;
+}
+.vivo-xplay5 .title h2 {
+    height: 55px;
+}
+.vivo-v3 .title h2 {
+    height: 68px;
+}
+.vivo-x6s .title h2 {
+    height: 68px;
+}
+
+
+.title h2 img{
+    width: auto;
+    height:100%;
+}
+
+.title h2 img{
+    width: auto;
+    height:100%;
+}
+.title h2 img{
+    width: auto;
+    height:100%;
+}
+
+
+li .title .more {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+li .title .more {
+   /* margin-top: 50px;*/
+}
+ul li .title .more span {
+    font-size: 13px;
+    line-height: 30px;
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.vivo-x7gray .title .more span {
+    border: 1px #008cd6 solid;
+    color: #008fd5;
+}
+.vivo-x7sale .title .more span {
+    border: 1px #fff solid;
+    color: #fff;
+}
+.vivo-xplay5 .title .more span {
+    border: 1px #008cd6 solid;
+    color: #008fd5;
+}
+.vivo-v3 .title .more span {
+    border: 1px #008cd6 solid;
+    color: #008fd5;
+}
+.vivo-x6s .title .more span {
+    border: 1px #008cd6 solid;
+    color: #008fd5;
+}
+li .title .more span {
+    font-size: 13px;
+    line-height: 30px;
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+
+ul li .figure {
+    position: absolute;
+}
+.vivo-x7gray .figure {
+    width: 625px;
+    height: 700px;
+    bottom: -480px;
+    right: -420px;
+}
+.vivo-x7sale .figure {
+    bottom: -290px;
+    right: -320px;
+    width: 390px;
+    height: 435px;
+}
+.vivo-xplay5 .figure {
+    width: 950px;
+    height: 720px;
+    bottom: -390px;
+    right: -450px;
+}
+.vivo-v3 .figure {
+    width: 750px;
+    height: 575px;
+    bottom: -380px;
+    right: -600px;
+}
+.vivo-x6s .figure {
+    width: 300px;
+    height: 435px;
+    bottom: -240px;
+    right: 0;
+}
+
+
+.vivo-x7gray .figure em {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.vivo-x7sale .figure em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.vivo-v3 .figure em {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+.vivo-x6s .figure em {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 480px 696px;
+}
+li .figure img {
+    width: auto;
+    height: 100%;
+}
+
+.vivo-x7sale .figure i {
+    background: #5594e1 url(../images/vm-h-x7sale-bg.jpg) center center no-repeat;
+    background-size: auto 100%;
+    height: 1080px;
+    width: 2560px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1460px;
+    margin-top: -590px;
+    z-index: -1;
+}
+.vivo-x7sale .figure i {
+    height: 800px;
+    margin-top: -480px;
+    margin-left: -1400px;
+    background-image: url(../images/vm-h-x7sale-bg-mini.jpg);
+}
+
+
+
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 600%;
+    height: 100%;
+}
+
+.banner-item {
+    width: 1000px;
+    margin: 0 auto;
+}
+.bigBanner ol{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+.bigBanner ol .current{
+    background-color: #007AFB;
+}
+.bigBanner ol li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.bigBanner ol li:hover{
+    background-color: #007AFB;
+}

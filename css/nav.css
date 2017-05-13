@@ -1,0 +1,237 @@
+/*header部分*/
+.header-box{
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, .8);
+}
+.w{
+    width: 1226px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+/*logo部分*/
+.header{
+    height: 80px;
+}
+.header .wrap{
+    margin: 0 auto;
+}
+.header .header-logo{
+    width: 115px;
+    height: 80px;
+}
+/*导航中间链接部分*/
+.header .header-link li{
+    float: left;
+}
+.header .header-link li a{
+    display: block;
+    padding: 30px 20px;
+}
+.header .header-link li a:hover{
+    color: #31a5e7;
+}
+/*用户登录部分*/
+.header-user {
+    position: relative;
+    padding: 30px;
+}
+.header-user-img {
+    width: 60px;
+    height: 23px;
+    position: absolute;
+    z-index: 1;
+    top: 27px;
+}
+.header-user-img i {
+    width: 0;
+    height: 0px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #999 transparent transparent transparent;
+    position: absolute;
+    left: 33px;
+    top: 10px;
+    z-index: 1;
+}
+.header-user-img s {
+    width: 0;
+    height: 0px;
+    border-width: 4px 4px 0 4px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    position: absolute;
+    left: 35px;
+    top: 10px;
+    z-index: 1;
+}
+.header-user-box {
+    width: 60px;
+    height: 79px;
+    border: 1px solid #ccc;
+    border-top: 3px solid #1395e4;
+    position: absolute;
+    top: 0;
+    left: 21px;
+    border-bottom: 0;
+    display: none;
+    background-color: white;
+}
+.header-user-trigger {
+    width: 155px;
+    height: 200px;
+    position: absolute;
+    left: -74px;
+    top: 82px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    display: none;
+    z-index: 1;
+    background-color: white;
+}
+.header-user-trigger .trigger-top {
+    width: 75px;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+}
+.header-user-trigger ul {
+    margin-top: 20px;
+}
+.header-user-trigger ul li {
+    line-height: 32px;
+    text-align: left;
+    padding-left: 20px;
+}
+.header-user-trigger ul li .btn {
+    width: 113px;
+    height: 32px;
+    background-color: #3DB1FA;
+    border-radius: 6px;
+    border-width: thin;
+}
+.header-user-trigger a:hover{
+    color: #1395e4;
+}
+.header .login {
+    width: 512px;
+    height: 280px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 200%;
+    margin: -50px 0 0 -255px;
+    text-align: center;
+    line-height:65px;
+    z-index: 3;
+    box-shadow: 0px 0px 20px #ddd;
+    border:#ebebeb solid 1px;
+    display: none;
+}
+.admin{
+    margin-top: 30px;
+}
+
+.header .login i {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font: 14px "微软雅黑";
+    cursor: pointer;
+    z-index: 1;
+}
+.header .login h3 {
+    display: block;
+    font: 17px/35px "微软雅黑";
+    cursor:pointer;
+    padding-top: 15px;
+}
+.header .login .low{
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+}
+.header .login input {
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    width: 280px;
+    border: #ebebeb 1px solid;
+    text-indent: 5px;
+    font-size: 12px;
+    margin: 0;
+}
+ #ale {
+    position: absolute;
+    top: 64px;
+    right: 63px;
+}
+#pass{
+    position: absolute;
+    top: 130px;
+    right: 60px;
+}
+.rubbish {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    opacity: 0.3;
+    display: none;
+    z-index: 2;
+}
+
+
+
+/*头部导航下拉*/
+.header-sub{
+    /*height: 132px;*/
+    /*background-color: antiquewhite;*/
+
+    /*position: relative;*/
+}
+.header-mz-sub-wrap a,.header-ml-sub-wrap a,.header-flag-sub-wrap a{
+    display: block;
+    margin-top: 10px;
+}
+.header-flag-sub-wrap,.header-mz-sub-wrap,.header-mx-sub-wrap{
+    overflow: hidden;
+}
+.shaw{
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    border-bottom: 1px solid #ccc;
+    display: none;
+    top: 80px;
+    background-color: rgba(255, 255, 255, .8);
+}
+.header-flag-bottom,.header-mz-bottom,.header-mx-bottom{
+    padding: 5px 0 0 370px;
+    display: none;
+    position: absolute;
+    top: 80px;
+}
+.header-sub li{
+    float: left;
+    width: 10px;
+    height: 120px;
+    text-align: center;
+}
+.header-flag-bottom li img{
+    width: 63px;
+    height: 81px;
+    border: 0;
+    vertical-align: middle;
+}
